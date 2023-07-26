@@ -114,6 +114,11 @@
 ```cmd
 choco install packer --version=1.9.1 -y
 ```
+in some cases if we change version from below 1.9.x we will have an error about unknow resource hyperv-iso, to fix it run
+
+```cmd
+packer plugins install github.com/hashicorp/hyperv
+```
 
 ### Install required plugins
 
